@@ -39,7 +39,7 @@ $data=mysqli_query($con,$q);
      while($result=mysqli_fetch_assoc($data)){
         $id=$result["id"];
         echo 
-          $result['name'].'<img src='.$result['ionk'].' /><a href="indo.php?id='.$id.'">edit </a><a href="?id='.$id.'">x</a><br>';
+          $result['name'].'<img src='.$result['ionk'].' /><a href="edit.php?id='.$id.'">edit </a><a href="?id='.$id.'">x</a><br>';
 }
 
 if(isset($_GET['id'])){

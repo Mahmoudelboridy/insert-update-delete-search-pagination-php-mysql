@@ -40,6 +40,8 @@ $query="UPDATE `img` SET  name='$name',ionk='$folder' WHERE id='$idon'";
 $data=mysqli_query($con,$query);
 if ($data){
     echo "yes mission completed";
+    header('Location: indo.php');
+
 }
 else {
     echo "none";
